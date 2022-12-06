@@ -12,27 +12,27 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    API_ID = 1663897  # integer value, dont use ""
+    API_HASH = "1875206e088b4afe272ee51fdb310a46"
+    TOKEN = "5370618863:AAEX5Vr1HP1TWcUZtMRNNUVbON276ZHCZ2U"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1463712862  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OPENWEATHERMAP_ID = 22322
-    OWNER_USERNAME = "Scotchers"
-    BOT_USERNAME = "EmiexRobot"
-    SUPPORT_CHAT = "FumikaSupportGroup"  # Your own group for support, do not add the @
+    OWNER_USERNAME = "Zazbhai"
+    BOT_USERNAME = "Zazbhaibot"
+    SUPPORT_CHAT = "HollaServer"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001748076180
+        -1001616008828
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001748076180
+        -1001616008828
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    ERROR_LOG = -1001657496255
+    ERROR_LOG = -1001616008828
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
-    MONGO_DB_URI = "mongo+srv"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "postgres://adltsqzy:cxsiGjfKE7UxidozcBFj1jFv2Geey4Ft@mouse.db.elephantsql.com/adltsqzy"  # needed for any database modules
+    MONGO_DB_URI = "mongodb+srv://deadterabaap09:dead@cluster0.3a4z5gq.mongodb.net/?retryWrites=true&w=majority"  # needed for any database modules
     ARQ_API_URL = "https://arq.hamker.in"
-    ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
+    ARQ_API_KEY = "EMJCKT-LFEXOP-UVMOXX-QOMCCD-ARQ"
     BOT_API_URL = "https://api.telegram.org/bot"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
@@ -44,14 +44,14 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "sudos")
+    DRAGONS = get_user_list("elevated_users.json", "sudos", "5509295719")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "devs")
+    DEV_USERS = get_user_list("elevated_users.json", "devs", "5509295719")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "supports")
+    DEMONS = get_user_list("elevated_users.json", "supports", "5509295719")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "tigers")
-    WOLVES = get_user_list("elevated_users.json", "whitelists")
+    TIGERS = get_user_list("elevated_users.json", "tigers", "5509295719")
+    WOLVES = get_user_list("elevated_users.json", "whitelists", "5509295719")
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
@@ -63,9 +63,9 @@ class Config(object):
     BAN_STICKER = ""  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
     CASH_API_KEY = (
-        "awoo"  # Get your API key from https://www.alphavantage.co/support/#api-key
+        "G9M22TD5TJESNJW9"  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
-    TIME_API_KEY = "awoo"  # Get your API key from https://timezonedb.com/api
+    TIME_API_KEY = "EXINY70QD34F"  # Get your API key from https://timezonedb.com/api
     WALL_API = (
         "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
     )
@@ -80,8 +80,8 @@ class Config(object):
     LASTFM_API_KEY = "yeah"
     CF_API_KEY = "jk"
     BL_CHATS = []  # List of groups that you want blacklisted.
-    SESSION_STRING = "12342"
-    STRING_SESSION = "kontol"
+    SESSION_STRING = "1AZWarzMBuwtbmzCLEbAI3gteSo15xgyzq5s3udmXIFLq-TPGGtlBq4VESsi-Cp42-R7pygOG4mIwhjoTgjYmnsfdwOHFoiDZMveQwtq7Ajc--5ckxdvFQMSG8qBVyjFntSuYaSjcBCumlK7-Y6AbKVsJS6YktSBMzY15U3lkBhPG80K9qGyqcUcBMb_iIdE9ELLwDHPYIIYEwIMcwTZ7qbv58-fw0927pvhK6v_9zWzDY725FsTOv2aDX3tjN9BtJzIVG_RWe6U8DY7U3AahZ33G8JlFV6Fo6TIvwXLywxWZHI6Ve56o8Cv7St3Z_EKGm7IpreC9AAgbcq93AkzMyci1Cw3CoTc="
+    STRING_SESSION = "1AZWarzMBuwtbmzCLEbAI3gteSo15xgyzq5s3udmXIFLq-TPGGtlBq4VESsi-Cp42-R7pygOG4mIwhjoTgjYmnsfdwOHFoiDZMveQwtq7Ajc--5ckxdvFQMSG8qBVyjFntSuYaSjcBCumlK7-Y6AbKVsJS6YktSBMzY15U3lkBhPG80K9qGyqcUcBMb_iIdE9ELLwDHPYIIYEwIMcwTZ7qbv58-fw0927pvhK6v_9zWzDY725FsTOv2aDX3tjN9BtJzIVG_RWe6U8DY7U3AahZ33G8JlFV6Fo6TIvwXLywxWZHI6Ve56o8Cv7St3Z_EKGm7IpreC9AAgbcq93AkzMyci1Cw3CoTc="
     MONGO_PORT = 27017
     MONGO_DB = "Emiko"
 
